@@ -1,0 +1,10 @@
+The output of a CNN is typically a feature vector that represents the learned visual characteristics of the image.
+The output of an RNN/LSTM is a feature vector that represents the learned sequential information from the text or time series data.
+These feature vectors can be concatenated into a single, larger feature vector.
+
+cnn + rf: CNN to extract powerful visual features from car images, and then using the Random Forest for the final price prediction based on these features. Random Forests are good at handling complex, non-linear relationships and can be robust to overfitting.
+
+Why Not Other Pairings (e.g., 'lstm + cnn')?
+Pairings like directly feeding the output of an LSTM into a CNN are less common because their fundamental operations are designed for different data structures:
+LSTM Output: Typically a feature vector representing the learned information from a sequence.
+CNN Input: Expects grid-like data.
